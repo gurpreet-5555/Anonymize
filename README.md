@@ -15,7 +15,6 @@ Some of the applications of anonymization are:<br>
 <br>
 
 <h3>How it works ?</h3>
-<br>
 This program uses a whitelist containing images of people who shouldn't be anonymized. It is recommended to have atleast 2-3 images of a person to have better face recognition. People who are not a part of whitelist are censored and anonymized in the input video stream.
 <br><br>
 It uses <b>face_recognition</b> library created by <a href="https://github.com/ageitgey">Adam Geitgey</a> which is built on top of <b>dlib</b> library.
@@ -48,12 +47,14 @@ It uses <b>face_recognition</b> library created by <a href="https://github.com/a
   <pre>git clone https://github.com/gurpreet-5555/Anonymize.git</pre>  </ul>
 <ul>  <li>Navigate to main directory</li>
   <pre>cd Anonymize</pre> </ul>
+  <br>
 <ul><li>Add images of known people in directory 'Allowed_faces'. <br>Note: Only one person per image with face clearly visible. Add 3-4 images per person for better face recognition.</li></ul>
+<br>
 <ul><li>Execute Program</li>
   <pre>python Anonymize.py --stream http://192.168.1.43:8080/video --upsample 1 --display True --output "F:\Temp"</pre>
 <pre>Arguments -
 stream : Source of video feed (http, rtsp etc) or video file. (Required)
-upsample: Scale to upsample the image for better face detection. Note: Higher upsample size reduces speed. Default value = 1 (Optional)
-display: True: Display frames while rendering input video stream. Default value = False (Optional)
-output: Path to output directory
+upsample: Scale to upsample the image for better face detection. Note: Higher upsample size reduces rendering speed. Default value = 1 (Optional)
+display: True - Display frames while rendering input video stream. Default value = False (Optional)
+output: Path to output directory (Required)
 </pre></ul>
