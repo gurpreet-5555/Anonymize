@@ -31,7 +31,7 @@ It uses <b>face_recognition</b> library created by <a href="https://github.com/a
 </ul>  
 
 <h2>Result</h2>
-![](sample/videoplayback.mp4)
+![](sample/output.avi)
 
 <h2>Requirements:</h2>
 <ul>
