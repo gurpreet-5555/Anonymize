@@ -45,7 +45,6 @@ It uses <b>face_recognition</b> library created by <a href="https://github.com/a
 <ul>  <li>Navigate to main directory</li>
   <pre>cd Anonymize</pre> </ul>
 <ul><li>Add images of known people in the directory 'Allowed_faces'. <br>Note: Only one person per image with face clearly visible. Add 3-4 images per person for better face recognition.</li></ul>
-<br>
 <ul><li>Execute Program</li>
   <pre>python Anonymize.py --stream http://192.168.1.43:8080/video --upsample 1 --display True --output "F:\Temp"</pre>
 <pre>Arguments -
